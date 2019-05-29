@@ -1,2 +1,5 @@
 <manifest
-        package="com.vitorota.network"/>
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.vitorota.network">
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
