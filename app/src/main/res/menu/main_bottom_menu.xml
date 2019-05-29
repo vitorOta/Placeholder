@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/menu_posts"
+            android:title="@string/posts"
+            android:icon="@drawable/ic_comment_black_24dp"/>
+
+    <item
+            android:id="@+id/menu_albums"
+            android:title="@string/albums"
+            android:icon="@drawable/ic_album_black_24dp"/>
+
+    <item
+            android:id="@+id/menu_todo"
+            android:title="@string/todo"
+            android:icon="@drawable/ic_check_box_black_24dp"/>
+</menu>

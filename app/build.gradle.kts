@@ -26,6 +26,10 @@ android {
 
 dependencies {
     implementation(Libraries.kotlin)
+    implementation(Libraries.navigationUI)
+    implementation(Libraries.navigationFragment)
+
+
     implementation(project(Modules.Libraries.uicomponents))
     implementation(project(Modules.Libraries.actions))
     implementation(project(Modules.Features.albums))
