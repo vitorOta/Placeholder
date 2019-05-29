@@ -1,7 +1,7 @@
 include(
     Modules.app,
-    Modules.Libraries.network,
     Modules.Libraries.uicomponents,
+    Modules.Libraries.network,
     Modules.Libraries.actions,
     Modules.Features.albums,
     Modules.Features.posts,
