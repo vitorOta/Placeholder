@@ -1,0 +1,3 @@
+include ':app',
+        ':libraries:uicomponents', ':libraries:network',
+        ':features:posts', ':features:albums', ':features:todo'
