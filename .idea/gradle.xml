@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/features/posts" />
             <option value="$PROJECT_DIR$/features/todo" />
             <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/actions" />
             <option value="$PROJECT_DIR$/libraries/network" />
             <option value="$PROJECT_DIR$/libraries/uicomponents" />
           </set>

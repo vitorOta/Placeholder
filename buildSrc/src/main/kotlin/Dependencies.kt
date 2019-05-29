@@ -52,6 +52,7 @@ object Modules {
     const val app = ":app"
 
     object Libraries {
+        const val actions = ":libraries:actions"
         const val network = ":libraries:network"
         const val uicomponents = ":libraries:uicomponents"
     }
