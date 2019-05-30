@@ -1,5 +1,5 @@
 # Placeholder
-An app that consumes https://jsonplaceholder.typicode.com/
+A simple app that consumes https://jsonplaceholder.typicode.com/
 
 #### Language
 - Kotlin
