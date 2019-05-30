@@ -2,9 +2,7 @@
 A simple app that consumes https://jsonplaceholder.typicode.com/
 
 
-  <img src="https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_todo.png" width="300">
-  <img src="https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_albums.png" width="300">
-  <img src="https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_posts.png" width="300">
+  <img src="https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_todo.png" width="275"> <img src="https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_albums.png" width="275"> <img src="https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_posts.png" width="275">
 
 #### Language
 - Kotlin (code and gradle files)
