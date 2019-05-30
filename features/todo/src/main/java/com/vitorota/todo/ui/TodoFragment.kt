@@ -1,5 +1,6 @@
 package com.vitorota.todo.ui
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -38,7 +39,9 @@ class TodoFragment : Fragment() {
     }
 
     private fun setupView() {
-        recyclerView.layoutManager = StaggeredGridLayoutManager(2, RecyclerView.VERTICAL)
+        val spanCount =
+            if (context?.resources?.configuration?.orientation == Configuration.ORIENTATION_LANDSCAPE) 3 else 2
+        recyclerView.layoutManager = StaggeredGridLayoutManager(spanCount, RecyclerView.VERTICAL)
         recyclerView.adapter = adapter
     }
 

@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.vitorota.common.utils.SingleLiveEvent
 import com.vitorota.todo.Todo
 import com.vitorota.todo.usecase.ListUseCase
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 /**
@@ -26,7 +27,7 @@ class TodoViewModel(private val listUseCase: ListUseCase) : ViewModel() {
     fun initData() {
         viewModelScope.launch {
             showProgress.call()
-            _todos.value = listUseCase.execute(null)
+            _todos.value = async{listUseCase.execute(null)}.await()
             loadedOnce = true
             hideProgress.call()
         }
