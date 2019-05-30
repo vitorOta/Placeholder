@@ -26,6 +26,7 @@ class TodoAdapter : ListAdapter<Todo, TodoAdapter.ViewHolder>(DIFF_CALLBACK) {
             tvId.text = "${todo.id}"
             tvTitle.text = todo.title
             cbCompleted.isChecked = todo.completed
+            container.setOnClickListener { cbCompleted.performClick() }
         }
     }
 
