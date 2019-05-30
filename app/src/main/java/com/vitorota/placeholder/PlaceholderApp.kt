@@ -1,6 +1,7 @@
 package com.vitorota.placeholder
 
 import android.app.Application
+import com.vitorota.posts.di.PostsModule
 import com.vitorota.todo.di.TodoModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -21,7 +22,8 @@ class PlaceholderApp : Application() {
             androidContext(this@PlaceholderApp)
             modules(
                 listOf(
-                    *TodoModule.getModules()
+                    *TodoModule.getModules(),
+                    *PostsModule.getModules()
                 )
             )
         }
