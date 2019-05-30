@@ -8,4 +8,12 @@
             android:id="@+id/todoFragment"
             android:name="com.vitorota.todo.ui.TodoFragment"
             android:label="TodoFragment"/>
+    <fragment
+            android:id="@+id/albumsFragment"
+            android:name="com.vitorota.albums.ui.AlbumsFragment"
+            android:label="AlbumsFragment"/>
+    <fragment
+            android:id="@+id/postsFragment"
+            android:name="com.vitorota.posts.ui.PostsFragment"
+            android:label="PostsFragment"/>
 </navigation>
