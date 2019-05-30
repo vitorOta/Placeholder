@@ -1,6 +1,7 @@
 package com.vitorota.placeholder
 
 import android.app.Application
+import com.vitorota.albums.di.AlbumsModule
 import com.vitorota.posts.di.PostsModule
 import com.vitorota.todo.di.TodoModule
 import org.koin.android.ext.koin.androidContext
@@ -23,7 +24,8 @@ class PlaceholderApp : Application() {
             modules(
                 listOf(
                     *TodoModule.getModules(),
-                    *PostsModule.getModules()
+                    *PostsModule.getModules(),
+                    *AlbumsModule.getModules()
                 )
             )
         }
