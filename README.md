@@ -1,9 +1,9 @@
 # Placeholder
 A simple app that consumes https://jsonplaceholder.typicode.com/
 
-![todo](https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_todo.png | width=100)
-![posts](https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_posts.png | width=100)
-![albums](https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_albums.png | width=100)
+![](https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_todo.png)
+![](https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_posts.png)
+![](https://raw.githubusercontent.com/vitorOta/Placeholder/master/screenshot_albums.png)
 
 #### Language
 - Kotlin (code and gradle files)
