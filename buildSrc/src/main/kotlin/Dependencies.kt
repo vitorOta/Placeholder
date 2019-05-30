@@ -22,10 +22,14 @@ object Libraries {
     const val kotlinExtensions = "androidx.core:core-ktx:${Versions.kotlinExtensions}"
     const val constraintLayout =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+    const val cardView = "androidx.cardview:cardview:${Versions.cardView}"
     const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
+
     const val navigationFragment =
         "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val room = "androidx.room:room-runtime:${Versions.room}"
+    const val roomKtExtensionsAndCoroutineSupport = "androidx.room:room-ktx:${Versions.room}"
 
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
@@ -38,6 +42,10 @@ object Libraries {
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
 
+}
+
+object KaptLibraries {
+    const val room = "androidx.room:room-compiler:${Versions.room}"
 }
 
 object TestLibraries {

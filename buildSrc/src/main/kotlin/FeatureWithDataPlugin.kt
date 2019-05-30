@@ -15,6 +15,7 @@ class FeatureWithDataPlugin : Plugin<Project> {
 
     fun configureDependencies(project: Project) {
         val implementation = "implementation"
+        val kapt = "kapt"
         val testImplementation = "testImplementation"
         val androidTestImplementation = "androidTestImplementation"
 
@@ -24,14 +25,20 @@ class FeatureWithDataPlugin : Plugin<Project> {
 
             add(implementation, Libraries.kotlin)
             add(implementation, Libraries.kotlinExtensions)
+
             add(implementation, Libraries.navigationFragment)
             add(implementation, Libraries.navigationUI)
+
+            add(implementation, Libraries.room)
+            add(implementation, Libraries.roomKtExtensionsAndCoroutineSupport)
+            add(kapt, KaptLibraries.room)
 
             add(implementation, Libraries.coroutines)
             add(implementation, Libraries.coroutinesAndroid)
 
             add(implementation, Libraries.koin)
             add(implementation, Libraries.koinViewModel)
+
 
             add(testImplementation, TestLibraries.jUnit)
 

@@ -12,7 +12,10 @@ object Versions {
     const val kotlinExtensions = "1.0.2"
     const val constraintLayout = "1.1.3"
     const val recyclerView = "1.1.0-alpha05"
+    const val cardView = "1.0.0"
+
     const val navigation = "2.1.0-alpha04"
+    const val room = "2.1.0-beta01"
 
     const val retrofit = "2.5.0"
     const val retrofitCoroutinesAdapter = "0.9.2"
