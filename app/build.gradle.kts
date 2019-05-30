@@ -26,6 +26,7 @@ android {
 
 dependencies {
     implementation(Libraries.kotlin)
+    implementation(Libraries.koin)
     implementation(Libraries.navigationUI)
     implementation(Libraries.navigationFragment)
 

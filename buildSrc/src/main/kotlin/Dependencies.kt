@@ -28,12 +28,14 @@ object Libraries {
     const val navigationFragment =
         "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+
     const val room = "androidx.room:room-runtime:${Versions.room}"
     const val roomKtExtensionsAndCoroutineSupport = "androidx.room:room-ktx:${Versions.room}"
 
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
-    const val retrofitCoroutineAdapter =
+    const val retrofitCoroutinesAdapter =
         "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Versions.retrofitCoroutinesAdapter}"
 
     const val koin = "org.koin:koin-android:${Versions.koin}"
@@ -46,6 +48,7 @@ object Libraries {
 
 object KaptLibraries {
     const val room = "androidx.room:room-compiler:${Versions.room}"
+    const val lifecycle = "androidx.lifecycle:lifecycle-compiler:${Versions.lifecycle}"
 }
 
 object TestLibraries {
@@ -64,6 +67,7 @@ object Modules {
         const val actions = ":libraries:actions"
         const val network = ":libraries:network"
         const val uicomponents = ":libraries:uicomponents"
+        const val common = ":libraries:common"
     }
 
     object Features {

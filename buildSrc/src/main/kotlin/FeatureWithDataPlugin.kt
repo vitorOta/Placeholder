@@ -22,6 +22,7 @@ class FeatureWithDataPlugin : Plugin<Project> {
         project.dependencies {
             add(implementation, project(Modules.Libraries.uicomponents))
             add(implementation, project(Modules.Libraries.network))
+            add(implementation, project(Modules.Libraries.common))
 
             add(implementation, Libraries.kotlin)
             add(implementation, Libraries.kotlinExtensions)
@@ -32,6 +33,9 @@ class FeatureWithDataPlugin : Plugin<Project> {
             add(implementation, Libraries.room)
             add(implementation, Libraries.roomKtExtensionsAndCoroutineSupport)
             add(kapt, KaptLibraries.room)
+
+            add(implementation, Libraries.lifecycle)
+            add(kapt, KaptLibraries.lifecycle)
 
             add(implementation, Libraries.coroutines)
             add(implementation, Libraries.coroutinesAndroid)

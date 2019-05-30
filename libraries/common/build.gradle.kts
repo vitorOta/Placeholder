@@ -2,6 +2,7 @@ plugins {
     id(BuildPlugins.androidLibrary)
     id(BuildPlugins.kotlinAndroid)
     id(BuildPlugins.kotlinAndroidExtensions)
+    id(BuildPlugins.kotlinKapt)
 }
 
 android {
@@ -26,8 +27,10 @@ android {
 
 dependencies {
     //    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(Libraries.kotlin)
+    implementation(Libraries.appCompat)
+    implementation(Libraries.lifecycle)
+    implementation(Libraries.retrofitCoroutinesAdapter)
 
-    api(Libraries.retrofit)
-    implementation(Libraries.retrofitGsonConverter)
-    api(Libraries.retrofitCoroutinesAdapter)
+    kapt(KaptLibraries.lifecycle)
 }

@@ -15,6 +15,7 @@ object Versions {
     const val cardView = "1.0.0"
 
     const val navigation = "2.1.0-alpha04"
+    const val lifecycle = "2.1.0-beta01"
     const val room = "2.1.0-beta01"
 
     const val retrofit = "2.5.0"
