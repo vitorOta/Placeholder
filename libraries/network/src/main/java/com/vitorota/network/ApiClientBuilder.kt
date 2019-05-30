@@ -27,6 +27,7 @@ object ApiClientBuilder {
 
         val retrofit = Retrofit.Builder()
             .client(client)
+            .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .build()
