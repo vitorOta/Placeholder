@@ -1,5 +1,6 @@
 package com.vitorota.todo.data.network
 
+import com.vitorota.common.ToBean
 import com.vitorota.todo.Todo
 
 /**

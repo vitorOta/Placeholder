@@ -38,6 +38,8 @@ object Libraries {
     const val retrofitCoroutinesAdapter =
         "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Versions.retrofitCoroutinesAdapter}"
 
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
+
     const val koin = "org.koin:koin-android:${Versions.koin}"
     const val koinViewModel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
 

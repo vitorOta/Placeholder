@@ -1,6 +1,7 @@
 package com.vitorota.todo.di
 
 import androidx.room.Room
+import com.vitorota.common.API_URL
 import com.vitorota.network.ApiClientBuilder
 import com.vitorota.todo.data.local.TodoDb
 import com.vitorota.todo.data.local.TodoLocalRepository

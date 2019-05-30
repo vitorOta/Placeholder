@@ -12,7 +12,9 @@ object TodoModule {
             localModule,
             networkModule,
 
-            useCaseModule
+            useCaseModule,
+
+            uiModule
         )
     }
 }

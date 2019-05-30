@@ -1,5 +1,7 @@
 package com.vitorota.todo.usecase
 
+import com.vitorota.common.UseCase
+import com.vitorota.common.exceptions.RepositoryException
 import com.vitorota.todo.Todo
 import com.vitorota.todo.data.local.TodoLocalRepository
 import com.vitorota.todo.data.network.TodoCloudRepository

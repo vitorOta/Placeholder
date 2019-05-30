@@ -2,6 +2,7 @@ package com.vitorota.todo.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.vitorota.common.ToBean
 import com.vitorota.todo.Todo
 
 /**

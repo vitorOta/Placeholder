@@ -8,6 +8,6 @@ import retrofit2.http.GET
  * @since 29/05/2019
  */
 interface TodoApi {
-    @GET("todo")
+    @GET("todos")
     fun list(): Deferred<List<TodoSchema>>
 }

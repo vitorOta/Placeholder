@@ -28,6 +28,7 @@ dependencies {
     //    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     api(Libraries.retrofit)
+    api(Libraries.gson)
     implementation(Libraries.retrofitGsonConverter)
     api(Libraries.retrofitCoroutinesAdapter)
 }

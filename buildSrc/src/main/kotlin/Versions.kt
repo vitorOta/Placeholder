@@ -21,6 +21,8 @@ object Versions {
     const val retrofit = "2.5.0"
     const val retrofitCoroutinesAdapter = "0.9.2"
 
+    const val gson = "2.8.5"
+
     const val koin = "2.0.1"
 
     const val coroutines = "1.2.1"

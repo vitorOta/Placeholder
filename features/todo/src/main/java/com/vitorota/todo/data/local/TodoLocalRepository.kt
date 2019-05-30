@@ -1,5 +1,6 @@
 package com.vitorota.todo.data.local
 
+import com.vitorota.common.extensions.toBean
 import com.vitorota.todo.Todo
 import com.vitorota.todo.data.TodoRepository
 
