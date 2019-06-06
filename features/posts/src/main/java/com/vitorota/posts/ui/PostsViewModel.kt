@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.vitorota.common.utils.SingleLiveEvent
 import com.vitorota.posts.Post
 import com.vitorota.posts.usecase.ListUseCase
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 

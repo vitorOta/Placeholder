@@ -29,6 +29,8 @@ object Versions {
 
     //test and androidTest
     const val jUnit = "4.12"
+    const val mockk = "1.9"
+    const val androidCoreTesting = "2.1.0-beta01"
     const val androidTestRunner = "1.1.1"
     const val espresso = "3.1.1"
 }

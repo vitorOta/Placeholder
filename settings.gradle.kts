@@ -5,6 +5,7 @@ include(
     Modules.Libraries.network,
     Modules.Libraries.actions,
     Modules.Libraries.common,
+    Modules.Libraries.testCommon,
 
     Modules.Features.albums,
     Modules.Features.posts,

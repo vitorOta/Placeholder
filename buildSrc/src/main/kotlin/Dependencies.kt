@@ -56,6 +56,9 @@ object KaptLibraries {
 object TestLibraries {
     //test
     const val jUnit = "junit:junit:${Versions.jUnit}"
+    const val mockk = "io.mockk:mockk:${Versions.mockk}"
+    const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+    const val androidCoreTesting = "androidx.arch.core:core-testing:${Versions.androidCoreTesting}"
 
     //androidTest
     const val androidTestRunner = "androidx.test:runner:${Versions.androidTestRunner}"
@@ -70,6 +73,7 @@ object Modules {
         const val network = ":libraries:network"
         const val uicomponents = ":libraries:uicomponents"
         const val common = ":libraries:common"
+        const val testCommon = ":libraries:testCommon"
     }
 
     object Features {

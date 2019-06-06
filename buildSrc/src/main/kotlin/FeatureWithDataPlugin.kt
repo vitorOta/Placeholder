@@ -1,5 +1,6 @@
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.kotlin.dsl.DependencyHandlerScope
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.project
 
@@ -9,17 +10,26 @@ import org.gradle.kotlin.dsl.project
  */
 
 class FeatureWithDataPlugin : Plugin<Project> {
+
+    val implementation = "implementation"
+    val kapt = "kapt"
+    val testImplementation = "testImplementation"
+    val androidTestImplementation = "androidTestImplementation"
+
     override fun apply(project: Project) {
         configureDependencies(project)
     }
 
-    fun configureDependencies(project: Project) {
-        val implementation = "implementation"
-        val kapt = "kapt"
-        val testImplementation = "testImplementation"
-        val androidTestImplementation = "androidTestImplementation"
-
+    private fun configureDependencies(project: Project) {
         project.dependencies {
+            configDependencies(this)
+            configTestDependencies(this)
+            configAndroidTestDependencies(this)
+        }
+    }
+
+    private fun configDependencies(dependencies: DependencyHandlerScope) {
+        dependencies {
             add(implementation, project(Modules.Libraries.uicomponents))
             add(implementation, project(Modules.Libraries.network))
             add(implementation, project(Modules.Libraries.common))
@@ -42,12 +52,26 @@ class FeatureWithDataPlugin : Plugin<Project> {
 
             add(implementation, Libraries.koin)
             add(implementation, Libraries.koinViewModel)
+        }
 
+    }
+
+    private fun configTestDependencies(dependencies: DependencyHandlerScope) {
+        dependencies {
+            add(testImplementation, project(Modules.Libraries.testCommon))
 
             add(testImplementation, TestLibraries.jUnit)
+            add(testImplementation, TestLibraries.mockk)
+            add(testImplementation, TestLibraries.androidCoreTesting)
+            add(testImplementation, TestLibraries.coroutinesTest)
+        }
+    }
 
+    private fun configAndroidTestDependencies(dependencies: DependencyHandlerScope) {
+        dependencies {
             add(androidTestImplementation, TestLibraries.androidTestRunner)
             add(androidTestImplementation, TestLibraries.espresso)
         }
     }
+
 }
