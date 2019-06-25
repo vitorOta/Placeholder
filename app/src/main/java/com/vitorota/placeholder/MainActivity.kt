@@ -29,5 +29,9 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+        bottomNav.setOnNavigationItemReselectedListener {
+            //do nothing, since the item is already selected
+        }
     }
 }
