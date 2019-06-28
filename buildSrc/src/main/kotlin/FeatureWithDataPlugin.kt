@@ -20,9 +20,9 @@ class FeatureWithDataPlugin : Plugin<Project> {
         val androidTestImplementation = "androidTestImplementation"
 
         project.dependencies {
-            add(implementation, project(Modules.Libraries.uicomponents))
-            add(implementation, project(Modules.Libraries.network))
-            add(implementation, project(Modules.Libraries.common))
+            add(implementation, project(Modules.uicomponents))
+            add(implementation, project(Modules.network))
+            add(implementation, project(Modules.common))
 
             add(implementation, Libraries.kotlin)
             add(implementation, Libraries.kotlinExtensions)

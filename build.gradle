@@ -28,6 +28,21 @@ allprojects {
     }
 }
 
+subprojects{
+    afterEvaluate { project ->
+        if(project.hasProperty("android")){
+            android{
+                compileSdkVersion DefaultConfigs.compileSdkVersion
+                defaultConfig {
+                    minSdkVersion DefaultConfigs.minSdkVersion
+                    targetSdkVersion DefaultConfigs.targetSdkVersion
+                    testInstrumentationRunner = DefaultConfigs.testInstrumentationRunner
+                }
+            }
+        }
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

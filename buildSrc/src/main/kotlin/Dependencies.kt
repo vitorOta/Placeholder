@@ -65,16 +65,14 @@ object TestLibraries {
 object Modules {
     const val app = ":app"
 
-    object Libraries {
-        const val actions = ":libraries:actions"
-        const val network = ":libraries:network"
-        const val uicomponents = ":libraries:uicomponents"
-        const val common = ":libraries:common"
-    }
+    //libraries
+    const val actions = ":libraries:actions"
+    const val network = ":libraries:network"
+    const val uicomponents = ":libraries:uicomponents"
+    const val common = ":libraries:common"
 
-    object Features {
-        const val albums = ":features:albums"
-        const val posts = ":features:posts"
-        const val todo = ":features:todo"
-    }
+    //features
+    const val albums = ":features:albums"
+    const val posts = ":features:posts"
+    const val todo = ":features:todo"
 }

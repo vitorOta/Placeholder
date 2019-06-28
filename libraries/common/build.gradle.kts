@@ -6,13 +6,9 @@ plugins {
 }
 
 android {
-    compileSdkVersion(DefaultConfigs.compileSdkVersion)
     defaultConfig {
-        minSdkVersion(DefaultConfigs.minSdkVersion)
-        targetSdkVersion(DefaultConfigs.targetSdkVersion)
         versionCode = 1
         versionName = "1.0"
-        testInstrumentationRunner = DefaultConfigs.testInstrumentationRunner
     }
     buildTypes {
         getByName("release") {

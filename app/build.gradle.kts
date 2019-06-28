@@ -5,14 +5,10 @@ plugins {
 }
 
 android {
-    compileSdkVersion(DefaultConfigs.compileSdkVersion)
     defaultConfig {
         applicationId = "com.vitorota.placeholder"
-        minSdkVersion(DefaultConfigs.minSdkVersion)
-        targetSdkVersion(DefaultConfigs.targetSdkVersion)
         versionCode = 1
         versionName = "1.0"
-        testInstrumentationRunner = DefaultConfigs.testInstrumentationRunner
     }
     buildTypes {
         getByName("release") {
@@ -31,10 +27,10 @@ dependencies {
     implementation(Libraries.navigationUI)
     implementation(Libraries.navigationFragment)
 
+    implementation(project(Modules.uicomponents))
+    implementation(project(Modules.actions))
 
-    implementation(project(Modules.Libraries.uicomponents))
-    implementation(project(Modules.Libraries.actions))
-    implementation(project(Modules.Features.albums))
-    implementation(project(Modules.Features.posts))
-    implementation(project(Modules.Features.todo))
+    implementation(project(Modules.albums))
+    implementation(project(Modules.posts))
+    implementation(project(Modules.todo))
 }
